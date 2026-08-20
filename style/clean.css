@@ -1190,6 +1190,9 @@ textarea {
   flex-direction: column;
   gap: 28px;
   box-shadow: var(--shadow-md);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-info h3 {
@@ -1203,6 +1206,8 @@ textarea {
   display: flex;
   gap: 16px;
   align-items: flex-start;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .info-icon {
@@ -1218,6 +1223,11 @@ textarea {
   flex-shrink: 0;
 }
 
+.info-text {
+  min-width: 0;
+  flex: 1;
+}
+
 .info-text strong {
   display: block;
   font-size: 0.95rem;
@@ -1230,6 +1240,8 @@ textarea {
   font-size: 1.05rem;
   color: #fff;
   font-weight: 600;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 /* ==========================================================================
@@ -1487,21 +1499,62 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: 100%;
+    max-width: 100%;
+  }
+
   .contact-form,
   .contact-info {
     padding: 24px 16px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-form h3,
+  .contact-info h3 {
+    font-size: 1.3rem;
   }
 
   .form-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
   }
 
+  .form-group,
   .form-group.full-width {
-    grid-column: span 1;
+    width: 100%;
+    margin-bottom: 16px;
+    grid-column: auto;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 0.95rem;
   }
 
   .btn-form-group {
+    display: flex;
     flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn-form-group .btn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 12px 10px;
+    white-space: normal;
+    text-align: center;
   }
 
   .mobile-sticky-bar {
