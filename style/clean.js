@@ -1,36 +1,35 @@
 /* ==========================================================================
-   Clean My Chimney - Interactive JavaScript Logic
+   Clean My Chimney - Multi-Page Interactive JavaScript Logic
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Navbar Scroll Effect & Active Section Tracker
+  // 1. Navbar Scroll Effect & Active Page Link Highlighter
   const navbar = document.querySelector('.navbar');
   const navLinks = document.querySelectorAll('.nav-menu a, .mobile-drawer-menu a');
-  const sections = document.querySelectorAll('section[id]');
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
+  if (navbar) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 30) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  }
+
+  // Highlight active menu item based on current HTML file page
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  navLinks.forEach(link => {
+    const linkHref = link.getAttribute('href');
+    if (!linkHref) return;
+
+    link.classList.remove('active');
+
+    if (linkHref === currentPath || (currentPath === '' && linkHref === 'index.html')) {
+      link.classList.add('active');
+    } else if (linkHref.startsWith('#') && (currentPath === 'index.html' || currentPath === '')) {
+      // In-page hash link handling for single-page sections if present
     }
-
-    // ScrollSpy active link update
-    let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
-      const sectionHeight = section.offsetHeight;
-      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-        current = section.getAttribute('id');
-      }
-    });
-
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
-        link.classList.add('active');
-      }
-    });
   });
 
   // 2. Mobile Drawer Navigation Toggle
@@ -40,14 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const drawerBackdrop = document.getElementById('drawerBackdrop');
 
   function openDrawer() {
-    mobileDrawer.classList.add('open');
-    drawerBackdrop.classList.add('open');
+    if (mobileDrawer) mobileDrawer.classList.add('open');
+    if (drawerBackdrop) drawerBackdrop.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
 
   function closeDrawer() {
-    mobileDrawer.classList.remove('open');
-    drawerBackdrop.classList.remove('open');
+    if (mobileDrawer) mobileDrawer.classList.remove('open');
+    if (drawerBackdrop) drawerBackdrop.classList.remove('open');
     document.body.style.overflow = '';
   }
 
@@ -67,28 +66,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxDesc = document.getElementById('lightboxDesc');
   const lightboxClose = document.getElementById('lightboxClose');
 
-  galleryItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const imgSrc = item.dataset.img || item.querySelector('img').src;
-      const title = item.dataset.title || 'Field Service Snapshot';
-      const desc = item.dataset.desc || 'Clean My Chimney certified technician at work.';
+  if (galleryItems.length > 0 && lightboxModal) {
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const imgSrc = item.dataset.img || (item.querySelector('img') ? item.querySelector('img').src : '');
+        const title = item.dataset.title || 'Field Service Snapshot';
+        const desc = item.dataset.desc || 'Clean My Chimney certified technician at work.';
 
-      lightboxImg.src = imgSrc;
-      lightboxTitle.textContent = title;
-      lightboxDesc.textContent = desc;
-      lightboxModal.classList.add('active');
-      document.body.style.overflow = 'hidden';
+        if (lightboxImg) lightboxImg.src = imgSrc;
+        if (lightboxTitle) lightboxTitle.textContent = title;
+        if (lightboxDesc) lightboxDesc.textContent = desc;
+
+        lightboxModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
     });
-  });
 
-  if (lightboxClose) {
-    lightboxClose.addEventListener('click', () => {
-      lightboxModal.classList.remove('active');
-      document.body.style.overflow = '';
-    });
-  }
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', () => {
+        lightboxModal.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
 
-  if (lightboxModal) {
     lightboxModal.addEventListener('click', (e) => {
       if (e.target === lightboxModal) {
         lightboxModal.classList.remove('active');
@@ -111,11 +111,13 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function updateCostEstimate() {
-    if (!calcType || !calcService) return;
+    if (!calcType || !calcService || !calcAmount) return;
     const typeVal = calcType.value;
     const serviceVal = calcService.value;
-    const estimated = basePrices[typeVal][serviceVal];
-    calcAmount.textContent = `₹${estimated.toLocaleString('en-IN')}`;
+    if (basePrices[typeVal] && basePrices[typeVal][serviceVal]) {
+      const estimated = basePrices[typeVal][serviceVal];
+      calcAmount.textContent = `₹${estimated.toLocaleString('en-IN')}`;
+    }
   }
 
   if (calcType && calcService) {
@@ -126,14 +128,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (calcBookBtn) {
     calcBookBtn.addEventListener('click', () => {
-      const serviceSelect = document.getElementById('service');
       const selectedService = calcService ? calcService.value : '';
-      if (serviceSelect && selectedService) {
-        if (selectedService === 'deep_clean') serviceSelect.value = 'cleaning';
-        else if (selectedService === 'motor_repair') serviceSelect.value = 'motor';
-        else if (selectedService === 'duct_install') serviceSelect.value = 'installation';
-      }
-      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      let targetParam = 'cleaning';
+      if (selectedService === 'deep_clean') targetParam = 'cleaning';
+      else if (selectedService === 'motor_repair') targetParam = 'motor';
+      else if (selectedService === 'duct_install') targetParam = 'installation';
+
+      window.location.href = `contact.html?service=${targetParam}#booking-form`;
     });
   }
 
@@ -143,9 +144,9 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       const item = btn.parentElement;
       const isActive = item.classList.contains('active');
-      
+
       document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
-      
+
       if (!isActive) {
         item.classList.add('active');
       }
@@ -159,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const toastMsg = document.getElementById('toastMsg');
 
   function showToast(message) {
-    if (!toastNotification) return;
+    if (!toastNotification || !toastMsg) return;
     toastMsg.textContent = message;
     toastNotification.classList.add('show');
     setTimeout(() => {
@@ -168,11 +169,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (contactForm) {
+    // Auto-select service if URL query param exists (e.g. contact.html?service=motor)
+    const urlParams = new URLSearchParams(window.location.search);
+    const serviceParam = urlParams.get('service');
+    const serviceSelect = document.getElementById('service');
+    if (serviceParam && serviceSelect) {
+      serviceSelect.value = serviceParam;
+    }
+
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const service = document.getElementById('service').value;
+      const nameInput = document.getElementById('name');
+      const phoneInput = document.getElementById('phone');
+      const serviceSelect = document.getElementById('service');
+
+      const name = nameInput ? nameInput.value.trim() : '';
+      const phone = phoneInput ? phoneInput.value.trim() : '';
+      const service = serviceSelect ? serviceSelect.value : '';
 
       if (!name || !phone || !service) {
         showToast('Please fill in your Name, Phone Number, and Service required.');
@@ -184,15 +197,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // WhatsApp Booking Action
+  // WhatsApp Booking Action (Emoji Free)
   if (btnWhatsApp) {
     btnWhatsApp.addEventListener('click', () => {
-      const name = document.getElementById('name').value.trim() || 'Customer';
-      const phone = document.getElementById('phone').value.trim() || 'Not specified';
-      const service = document.getElementById('service').options[document.getElementById('service').selectedIndex]?.text || 'General Service';
-      const message = document.getElementById('message').value.trim() || 'Please arrange a service booking.';
+      const nameInput = document.getElementById('name');
+      const phoneInput = document.getElementById('phone');
+      const serviceSelect = document.getElementById('service');
+      const messageInput = document.getElementById('message');
 
-      const waText = `*New Booking Request - Clean My Chimney*\n\n👤 *Name:* ${name}\n📞 *Phone:* ${phone}\n🔧 *Service:* ${service}\n📝 *Details:* ${message}`;
+      const name = nameInput ? nameInput.value.trim() : 'Customer';
+      const phone = phoneInput ? phoneInput.value.trim() : 'Not specified';
+      const service = serviceSelect && serviceSelect.selectedIndex >= 0 ? serviceSelect.options[serviceSelect.selectedIndex].text : 'General Service';
+      const message = messageInput ? messageInput.value.trim() : 'Please arrange a service booking.';
+
+      const waText = `*New Booking Request - Clean My Chimney*\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\nDetails: ${message}`;
       const waUrl = `https://wa.me/918607673545?text=${encodeURIComponent(waText)}`;
       window.open(waUrl, '_blank');
     });
@@ -211,11 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Helper Function for Quick Booking buttons
+// Helper Function for Quick Booking buttons across pages
 function selectServiceAndBook(serviceValue) {
-  const serviceSelect = document.getElementById('service');
-  if (serviceSelect && serviceValue) {
-    serviceSelect.value = serviceValue;
-  }
-  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  window.location.href = `contact.html?service=${serviceValue}#booking-form`;
 }

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Our Services - Clean My Chimney | Deep Cleaning, Repair & Ducting</title>
+  <meta name="description"
+    content="Explore professional kitchen chimney deep cleaning, motor rewinding, baffle filter replacement, and duct fitting services. 90-day service warranty included." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style/clean.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-brand" onclick="window.location.href='index.html'">
+        <span class="logo-icon">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </span>
+        <span>CLEAN MY CHIMNEY</span>
+      </div>
+
+      <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="pricing.html">Price Estimator</a>
+        <a href="products.html">Products</a>
+        <a href="gallery.html">Real Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="btn btn-phone" onclick="window.location.href='tel:+918607673545'">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 8607673545
+        </button>
+        <button class="btn btn-book" onclick="window.location.href='contact.html#booking-form'">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Book Online
+        </button>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="nav-brand">
+        <span class="logo-icon">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </span>
+        <span>CLEAN MY CHIMNEY</span>
+      </div>
+      <button class="mobile-drawer-close" id="drawerClose">
+        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mobile-drawer-menu">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="pricing.html">Price Estimator</a>
+      <a href="products.html">Products & Accessories</a>
+      <a href="gallery.html">Real Work Showcase</a>
+      <a href="contact.html">Contact & Booking</a>
+    </div>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 10px;">
+      <button class="btn btn-phone" onclick="window.location.href='tel:+918607673545'">Call Support</button>
+      <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/918607673545', '_blank')">WhatsApp Us</button>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> &rarr; <span>Services</span>
+      </div>
+      <h1>Our Specialized Chimney Services</h1>
+      <p>
+        From deep chemical cleaning &amp; oil sludge removal to precision copper motor repairs and leak-proof ducting installation.
+      </p>
+    </div>
+  </header>
+
+  <!-- Detailed Services Section -->
+  <section class="services" style="padding: 60px 0;">
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 14-8.85 8.85a1.2 1.2 0 0 1-1.7-1.7L11.3 12.3"/><path d="M18.8 8.1C18.8 4 15.5.7 11.4.7c-2.4 0-4.6 1.1-6.1 3-.3.4-.3 1 0 1.4L18.8 8.1z"/><path d="M14.7 12.3 22.3 4.7a1.2 1.2 0 0 0-1.7-1.7l-7.6 7.6"/></svg>
+          </div>
+          <h3>Deep Chemical Cleaning Service</h3>
+          <p>
+            Complete disassembly of hood, blower fan, inner oil tray, and outer glass. Food-safe chemical soaking eliminates tough carbon grease and restores original suction CFM.
+          </p>
+          <ul style="margin: 12px 0; font-size: 0.9rem; color: var(--text-muted); list-style: none;">
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Non-toxic degreasing chemical bath</li>
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Blower fan rotor carbon removal</li>
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Outer body polishing &amp; sanitation</li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-price">Starts at ₹799</span>
+            <button class="btn-link" onclick="selectServiceAndBook('cleaning')">Book Now &rarr;</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Chimney Repair &amp; Fault Diagnostics</h3>
+          <p>
+            On-site diagnosis of electrical power failures, noisy motor operation, auto-clean sensor errors, and touch PCB switch failures. Fast component replacement.
+          </p>
+          <ul style="margin: 12px 0; font-size: 0.9rem; color: var(--text-muted); list-style: none;">
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Touch panel PCB &amp; switch repair</li>
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Motor capacitor &amp; wiring fix</li>
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Motion gesture sensor calibration</li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-price">Starts at ₹499</span>
+            <button class="btn-link" onclick="selectServiceAndBook('repair')">Book Now &rarr;</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3>Motor Replacement &amp; Overhaul</h3>
+          <p>
+            High-efficiency copper winding motor installation featuring silent ball bearing technology, thermal cutoff protection, and maximum suction airflow (1200+ m3/hr).
+          </p>
+          <ul style="margin: 12px 0; font-size: 0.9rem; color: var(--text-muted); list-style: none;">
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 100% Pure copper motor assembly</li>
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Silent bearing replacement</li>
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 1-Year motor replacement warranty</li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-price">Starts at ₹1,299</span>
+            <button class="btn-link" onclick="selectServiceAndBook('motor')">Book Now &rarr;</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          </div>
+          <h3>Filter Replacement &amp; Upgrades</h3>
+          <p>
+            Replacement of rusted or clogged baffle filters, stainless mesh filters, and charcoal activated carbon filters for ductless recirculation chimneys.
+          </p>
+          <ul style="margin: 12px 0; font-size: 0.9rem; color: var(--text-muted); list-style: none;">
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Heavy gauge SS 304 baffle filter</li>
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Active charcoal odor absorbing pad</li>
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Easy-clean oil collector cup</li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-price">Starts at ₹599</span>
+            <button class="btn-link" onclick="selectServiceAndBook('filter')">Book Now &rarr;</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="8" rx="1"/><path d="M17 14v7"/><path d="M7 14v7"/><path d="M17 3v3"/><path d="M7 3v3"/></svg>
+          </div>
+          <h3>Duct Pipe Installation &amp; Fitting</h3>
+          <p>
+            Precision wall drilling and anti-rust flexible aluminum ducting fitting with outdoor rain/pigeon cowl cover to ensure smoke exits smoothly.
+          </p>
+          <ul style="margin: 12px 0; font-size: 0.9rem; color: var(--text-muted); list-style: none;">
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Flexible aluminum duct pipe (6 inch)</li>
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Leak-proof duct tape sealing</li>
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Heavy plastic/aluminum cowl vent</li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-price">Starts at ₹899</span>
+            <button class="btn-link" onclick="selectServiceAndBook('installation')">Book Now &rarr;</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 1-1-1.73l-7-4a2 2 0 0 1-2 0l-7 4A2 2 0 0 1 3 8v8a2 2 0 0 1 1 1.73l7 4a2 2 0 0 1 2 0l7-4A2 2 0 0 1 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3>Uninstallation &amp; Relocation</h3>
+          <p>
+            Careful dismantling of your kitchen hood, wall bracket removal, safe transit packaging, and full re-installation at your new home location.
+          </p>
+          <ul style="margin: 12px 0; font-size: 0.9rem; color: var(--text-muted); list-style: none;">
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Safe wall bracket detachment</li>
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Electrical cord protection</li>
+            <li><svg class="icon-svg" style="color: var(--accent);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Re-alignment at new kitchen site</li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-price">Starts at ₹699</span>
+            <button class="btn-link" onclick="selectServiceAndBook('relocation')">Book Now &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Step-by-Step Service Process -->
+  <section style="background: var(--bg-main); padding: 60px 0; border-top: 1px solid var(--border);">
+    <div class="container">
+      <h2 class="section-title">Our Standard Service Process</h2>
+      <p class="section-subtitle">How our certified technicians perform doorstep servicing step-by-step.</p>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <span class="process-number">01</span>
+          <h3>1. Inspection &amp; Testing</h3>
+          <p>Technician checks electrical voltage, noise levels, motion sensor responses, and motor performance before starting work.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-number">02</span>
+          <h3>2. Full Disassembly</h3>
+          <p>Carefully removing the baffle filters, oil collector, blower assembly, and housing to expose inner grease buildup.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-number">03</span>
+          <h3>3. Chemical Degreasing</h3>
+          <p>Applying high-grade non-toxic degreaser solution to dissolve carbonized oil from fan blades and interior walls.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-number">04</span>
+          <h3>4. Reassembly &amp; Airflow Check</h3>
+          <p>Re-assembling components, lubricating motor rotor shaft, and testing final high CFM suction power.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; padding: 60px 0; text-align: center;">
+    <div class="container">
+      <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 12px;">Ready to Service Your Kitchen Chimney?</h2>
+      <p style="font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto 24px;">
+        Book online in 30 seconds or talk directly with our expert technician. Same-day doorstep availability guaranteed.
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html#booking-form" class="btn btn-book" style="padding: 14px 28px; font-size: 1rem;">
+          Book Online Now &rarr;
+        </a>
+        <a href="tel:+918607673545" class="btn btn-phone" style="background: rgba(255,255,255,0.15); color: #fff; padding: 14px 28px; font-size: 1rem;">
+          Call +91 8607673545
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <p>&copy; 2026 Clean My Chimney. All rights reserved. Professional Doorstep Chimney Cleaning &amp; Repair Service.</p>
+        <p class="footer-email">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email: <a href="mailto:arunkumar8607673545@gmail.com" class="footer-email-link">arunkumar8607673545@gmail.com</a>
+        </p>
+        <p class="footer-credit">
+          Created &amp; Serviced by <a href="https://edoply.in" target="_blank" rel="noopener noreferrer" class="credit-link">edoply.in</a>
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html" style="margin-right: 16px;">Home</a>
+        <a href="services.html" style="margin-right: 16px;">Services</a>
+        <a href="pricing.html" style="margin-right: 16px;">Pricing</a>
+        <a href="products.html" style="margin-right: 16px;">Products</a>
+        <a href="gallery.html" style="margin-right: 16px;">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <div class="mobile-sticky-bar">
+    <button class="btn btn-phone" onclick="window.location.href='tel:+918607673545'">
+      <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call Now
+    </button>
+    <button class="btn btn-whatsapp"
+      onclick="window.open('https://wa.me/918607673545?text=Hi%2C%20I%20want%20to%20book%20a%20Chimney%20Service', '_blank')">
+      <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.99c-.002 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+      WhatsApp
+    </button>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toastNotification">
+    <svg class="icon-svg" style="color: #10b981; font-size: 1.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toastMsg">Your request has been received!</span>
+  </div>
+
+  <!-- Script -->
+  <script src="style/clean.js"></script>
+</body>
+
+</html>

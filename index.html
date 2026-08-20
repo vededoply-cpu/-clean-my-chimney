@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Clean My Chimney - Professional Chimney Cleaning, Repair & Service</title>
   <meta name="description"
-    content="Fast, door-step kitchen chimney cleaning, motor repair, and duct installation service. Certified technicians, genuine parts, and same-day service." />
+    content="Fast doorstep kitchen chimney cleaning, motor repair, and duct installation service. Certified technicians, genuine parts, and same-day service." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,34 +22,54 @@
   <!-- Navigation Bar -->
   <nav class="navbar" id="navbar">
     <div class="container">
-      <div class="nav-brand" onclick="window.location.href='#home'">
-        <span class="logo-icon">🏠</span>
+      <div class="nav-brand" onclick="window.location.href='index.html'">
+        <span class="logo-icon">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+        </span>
         <span>CLEAN MY CHIMNEY</span>
       </div>
 
       <div class="nav-menu">
-        <a href="#home" class="active">Home</a>
-        <a href="#services">Services</a>
-        <a href="#gallery">Real Work</a>
-        <a href="#calculator">Price Estimator</a>
-        <a href="#products">Products</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Price Estimator</a>
+        <a href="products.html">Products</a>
+        <a href="gallery.html">Real Work</a>
+        <a href="contact.html">Contact</a>
       </div>
 
       <div class="nav-buttons">
         <button class="btn btn-phone" onclick="window.location.href='tel:+918607673545'">
-          📞 +91 8607673545
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          +91 8607673545
         </button>
-        <button class="btn btn-book"
-          onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
-          📅 Book Online
+        <button class="btn btn-book" onclick="window.location.href='contact.html#booking-form'">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          Book Online
         </button>
       </div>
 
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
-        ☰
+        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
       </button>
     </div>
   </nav>
@@ -58,25 +78,47 @@
   <div class="mobile-drawer" id="mobileDrawer">
     <div class="mobile-drawer-header">
       <div class="nav-brand">
-        <span class="logo-icon">🏠</span>
+        <span class="logo-icon">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+        </span>
         <span>CLEAN MY CHIMNEY</span>
       </div>
-      <button class="mobile-drawer-close" id="drawerClose">✕</button>
+      <button class="mobile-drawer-close" id="drawerClose">
+        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
     </div>
     <div class="mobile-drawer-menu">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Real Work Showcase</a>
-      <a href="#calculator">Price Estimator</a>
-      <a href="#products">Products & Accessories</a>
-      <a href="#testimonials">Customer Reviews</a>
-      <a href="#faq">Frequently Asked Questions</a>
-      <a href="#contact">Contact & Booking</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Price Estimator</a>
+      <a href="products.html">Products & Accessories</a>
+      <a href="gallery.html">Real Work Showcase</a>
+      <a href="contact.html">Contact & Booking</a>
     </div>
     <div style="margin-top: auto; display: flex; flex-direction: column; gap: 10px;">
-      <button class="btn btn-phone" onclick="window.location.href='tel:+918607673545'">📞 Call Support</button>
-      <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/918607673545', '_blank')">💬 WhatsApp
-        Us</button>
+      <button class="btn btn-phone" onclick="window.location.href='tel:+918607673545'">
+        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        Call Support
+      </button>
+      <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/918607673545', '_blank')">
+        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.99c-.002 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413" />
+        </svg>
+        WhatsApp Us
+      </button>
     </div>
   </div>
   <div class="drawer-backdrop" id="drawerBackdrop"></div>
@@ -87,7 +129,13 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-badge">
-          <span class="badge badge-accent">⚡ Same-Day Service Guarantee</span>
+          <span class="badge badge-accent">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+            Same-Day Service Guarantee
+          </span>
         </div>
         <h1>Fast, Reliable Kitchen <span>Chimney Service</span> At Your Doorstep</h1>
         <p>
@@ -96,12 +144,15 @@
         </p>
 
         <div class="hero-ctas">
-          <button class="btn btn-book"
-            onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+          <button class="btn btn-book" onclick="window.location.href='contact.html#booking-form'">
             Request Service Now
           </button>
           <button class="btn btn-whatsapp"
             onclick="window.open('https://wa.me/918607673545?text=Hi%2C%20I%20want%20to%20book%20a%20Chimney%20Service', '_blank')">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.99c-.002 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413" />
+            </svg>
             WhatsApp Quick Booking
           </button>
         </div>
@@ -112,7 +163,13 @@
             <span class="stat-label">Chimneys Serviced</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number">4.9 ★</span>
+            <span class="stat-number">4.9
+              <svg class="icon-svg" style="color: #f59e0b; vertical-align: -0.1em;" viewBox="0 0 24 24"
+                fill="currentColor">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </span>
             <span class="stat-label">Customer Rating</span>
           </div>
           <div class="stat-item">
@@ -145,7 +202,7 @@
     </div>
   </div>
 
-  <!-- Services Section -->
+  <!-- Services Overview Section -->
   <section class="services" id="services">
     <div class="container">
       <div class="badge badge-primary" style="margin: 0 auto 12px; display: table;">Our Expertise</div>
@@ -156,539 +213,130 @@
 
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">🔧</div>
+          <div class="service-icon">
+            <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg>
+          </div>
           <h3>Chimney Repair & Diagnostics</h3>
           <p>Full repair of noise issues, power failure, touch sensor errors, and circuit board faults with genuine
             spares.</p>
           <div class="service-card-footer">
             <span class="service-price">Starts at ₹499</span>
-            <button class="btn-link" onclick="selectServiceAndBook('repair')">Book Now →</button>
+            <button class="btn-link" onclick="selectServiceAndBook('repair')">Book Now &rarr;</button>
           </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon">🧹</div>
+          <div class="service-icon">
+            <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="m13 14-8.85 8.85a1.2 1.2 0 0 1-1.7-1.7L11.3 12.3" />
+              <path d="M18.8 8.1C18.8 4 15.5.7 11.4.7c-2.4 0-4.6 1.1-6.1 3-.3.4-.3 1 0 1.4L18.8 8.1z" />
+              <path d="M14.7 12.3 22.3 4.7a1.2 1.2 0 0 0-1.7-1.7l-7.6 7.6" />
+            </svg>
+          </div>
           <h3>Deep Cleaning Service</h3>
           <p>Thorough degreasing of blowers, mesh filters, oil collectors, and inner housing using non-toxic food-safe
             chemicals.</p>
           <div class="service-card-footer">
             <span class="service-price">Starts at ₹799</span>
-            <button class="btn-link" onclick="selectServiceAndBook('cleaning')">Book Now →</button>
+            <button class="btn-link" onclick="selectServiceAndBook('cleaning')">Book Now &rarr;</button>
           </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon">⚙️</div>
+          <div class="service-icon">
+            <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+            </svg>
+          </div>
           <h3>Motor Replacement & Repair</h3>
           <p>High-torque copper motor replacement with silent bearing technology and thermal overload protection.</p>
           <div class="service-card-footer">
             <span class="service-price">Starts at ₹1,299</span>
-            <button class="btn-link" onclick="selectServiceAndBook('motor')">Book Now →</button>
+            <button class="btn-link" onclick="selectServiceAndBook('motor')">Book Now &rarr;</button>
           </div>
         </div>
 
-
         <div class="service-card">
-          <div class="service-icon">🧤</div>
+          <div class="service-icon">
+            <svg class="icon-svg-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+            </svg>
+          </div>
           <h3>Filter Replacement</h3>
           <p>Replacement of heavy baffle filters, stainless mesh, and activated carbon charcoal filters for odor
             elimination.</p>
           <div class="service-card-footer">
             <span class="service-price">Starts at ₹599</span>
-            <button class="btn-link" onclick="selectServiceAndBook('filter')">Book Now →</button>
+            <button class="btn-link" onclick="selectServiceAndBook('filter')">Book Now &rarr;</button>
           </div>
         </div>
+      </div>
 
-        <div class="service-card">
-          <div class="service-icon">🏗️</div>
-          <h3>Installation & Duct Fitting</h3>
-          <p>Precision wall-mounted & island chimney installation with anti-rust aluminum flexible duct pipe fitting.
-          </p>
-          <div class="service-card-footer">
-            <span class="service-price">Starts at ₹899</span>
-            <button class="btn-link" onclick="selectServiceAndBook('installation')">Book Now →</button>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">📦</div>
-          <h3>Uninstallation & Relocation</h3>
-          <p>Safe chimney dismantling, wall bracket removal, and re-installation at your new home location.</p>
-          <div class="service-card-footer">
-            <span class="service-price">Starts at ₹699</span>
-            <button class="btn-link" onclick="selectServiceAndBook('relocation')">Book Now →</button>
-          </div>
-        </div>
+      <div style="text-align: center; margin-top: 36px;">
+        <a href="services.html" class="btn btn-primary">View All Services &amp; Detailed Process &rarr;</a>
       </div>
     </div>
   </section>
 
-  <!-- Real Work Showcase Gallery -->
-  <section class="gallery-section" id="gallery">
+  <!-- Interactive Estimator Teaser -->
+  <section class="calculator-section" style="background: #0b132b; padding: 60px 0;">
+    <div class="container" style="text-align: center;">
+      <span class="badge badge-accent" style="margin-bottom: 12px; display: inline-block;">Transparent Pricing</span>
+      <h2 style="font-size: 2rem; color: #ffffff; margin-bottom: 16px;">Want an Instant Price Estimate?</h2>
+      <p style="color: #94a3b8; max-width: 600px; margin: 0 auto 28px;">
+        Use our interactive price calculator to customize your service package based on your chimney model and
+        requirements.
+      </p>
+      <a href="pricing.html" class="btn btn-book" style="padding: 14px 28px; font-size: 1rem;">
+        Launch Price Estimator &rarr;
+      </a>
+    </div>
+  </section>
+
+  <!-- Real Work Teaser Section -->
+  <section class="gallery-section">
     <div class="container">
       <div class="badge badge-accent" style="margin: 0 auto 12px; display: table;">Proof of Quality</div>
-      <h2 class="section-title">Our Real Field Work in Action</h2>
+      <h2 class="section-title">Our Real Field Work</h2>
       <p class="section-subtitle">
-        See how our technicians transform dirty, clogged chimneys into pristine, high-suction units.
+        See how our certified technicians transform oil-choked, dirty chimneys into pristine high-suction units.
       </p>
 
-      <div class="gallery-grid">
-        <div class="gallery-item" data-img="images/1.jpeg" data-title="Deep Chimney Disassembly & Grease Scraping"
-          data-desc="Complete teardown of oil-choked hood to restore internal airflow.">
+      <div class="gallery-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="gallery-item" data-img="images/1.jpeg">
           <img src="images/1.jpeg" alt="Chimney Service Disassembly" loading="lazy" />
-          <span class="zoom-badge">🔍 Click to Zoom</span>
           <div class="gallery-overlay">
             <div class="gallery-title">Grease Scraping & Disassembly</div>
             <div class="gallery-desc">Full internal overhaul during servicing</div>
           </div>
         </div>
-
-        <div class="gallery-item" data-img="images/2.jpeg" data-title="Blower Fan & Housing Degreasing"
-          data-desc="Removal of heavy carbon sludge from suction fan blades to restore full CFM power.">
+        <div class="gallery-item" data-img="images/2.jpeg">
           <img src="images/2.jpeg" alt="Blower Fan Cleaning" loading="lazy" />
-          <span class="zoom-badge">🔍 Click to Zoom</span>
           <div class="gallery-overlay">
             <div class="gallery-title">Blower Fan & Motor Housing</div>
             <div class="gallery-desc">Deep cleaning of heavy oil build-up</div>
           </div>
         </div>
-
-        <div class="gallery-item" data-img="images/3.jpeg" data-title="Clean Installed Siemens Chimney"
-          data-desc="Finished wall-mounted stainless steel chimney installation with pristine wall tiling match.">
+        <div class="gallery-item" data-img="images/3.jpeg">
           <img src="images/3.jpeg" alt="Installed Siemens Chimney" loading="lazy" />
-          <span class="zoom-badge">🔍 Click to Zoom</span>
           <div class="gallery-overlay">
             <div class="gallery-title">Finished Kitchen Installation</div>
             <div class="gallery-desc">Flawless setup with concealed ducting</div>
           </div>
         </div>
-
-        <div class="gallery-item" data-img="images/4.jpeg" data-title="Motor Shaft & Bearing Servicing"
-          data-desc="Precision inspection and lubrication of chimney motor rotor to eliminate humming noise.">
-          <img src="images/4.jpeg" alt="Motor Shaft Servicing" loading="lazy" />
-          <span class="zoom-badge">🔍 Click to Zoom</span>
-          <div class="gallery-overlay">
-            <div class="gallery-title">Motor & Rotor Tuning</div>
-            <div class="gallery-desc">Replacing faulty bearings & noisy motors</div>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-img="images/5.jpeg" data-title="Chemical Pressure Cleaning & Wash"
-          data-desc="Deep degreasing bath and high-pressure chemical wash to dissolve stubborn grease.">
-          <img src="images/5.jpeg" alt="Chemical Pressure Cleaning" loading="lazy" />
-          <span class="zoom-badge">🔍 Click to Zoom</span>
-          <div class="gallery-overlay">
-            <div class="gallery-title">Chemical Washing & Degreasing</div>
-            <div class="gallery-desc">Removing heavy oil and carbon grime</div>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-img="images/6.jpeg" data-title="Exhaust Duct Pipe Fitting & Seal"
-          data-desc="Fitting durable, anti-rust flexible aluminum ducting pipe for smooth smoke extraction.">
-          <img src="images/6.jpeg" alt="Duct Pipe Fitting" loading="lazy" />
-          <span class="zoom-badge">🔍 Click to Zoom</span>
-          <div class="gallery-overlay">
-            <div class="gallery-title">Aluminum Duct Pipe Installation</div>
-            <div class="gallery-desc">Leak-proof pipe fitting & outdoor cowl</div>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-img="images/7.jpeg" data-title="Baffle Filter & Oil Collector Cleaning"
-          data-desc="Deep scrubbing and thermal treatment of stainless steel baffle filters.">
-          <img src="images/7.jpeg" alt="Baffle Filter Cleaning" loading="lazy" />
-          <span class="zoom-badge">🔍 Click to Zoom</span>
-          <div class="gallery-overlay">
-            <div class="gallery-title">Filter & Oil Tray Restoration</div>
-            <div class="gallery-desc">100% degreased baffle filter grid</div>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-img="images/8.jpeg" data-title="Motor Capacitor & Wiring Repair"
-          data-desc="Testing electrical circuit board, switch contacts, and replacing failed capacitor units.">
-          <img src="images/8.jpeg" alt="Motor Electrical Wiring Repair" loading="lazy" />
-          <span class="zoom-badge">🔍 Click to Zoom</span>
-          <div class="gallery-overlay">
-            <div class="gallery-title">Circuit & Electrical Repair</div>
-            <div class="gallery-desc">Replacing PCB, capacitor & power cord</div>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-img="images/9.jpeg" data-title="Comprehensive Doorstep Servicing"
-          data-desc="Complete breakdown, cleaning, and restoration performed directly at customer doorstep.">
-          <img src="images/9.jpeg" alt="Doorstep Service Work" loading="lazy" />
-          <span class="zoom-badge">🔍 Click to Zoom</span>
-          <div class="gallery-overlay">
-            <div class="gallery-title">On-Site Doorstep Service</div>
-            <div class="gallery-desc">Professional field work in progress</div>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-img="images/10.jpeg" data-title="Touch Switch Panel & Auto-Clean Calibration"
-          data-desc="Recalibrating motion sensors and touch keypads for smooth speed control.">
-          <img src="images/10.jpeg" alt="Touch Control Switch Servicing" loading="lazy" />
-          <span class="zoom-badge">🔍 Click to Zoom</span>
-          <div class="gallery-overlay">
-            <div class="gallery-title">Touch Switch & Sensor Setup</div>
-            <div class="gallery-desc">Fixing key responsiveness & motion sensor</div>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-img="images/11.jpeg" data-title="Final Reassembly & Suction Testing"
-          data-desc="Quality check ensuring maximum suction CFM output, silent operation, and zero smoke leak.">
-          <img src="images/11.jpeg" alt="Final Reassembly & Testing" loading="lazy" />
-          <span class="zoom-badge">🔍 Click to Zoom</span>
-          <div class="gallery-overlay">
-            <div class="gallery-title">Final Quality & Airflow Check</div>
-            <div class="gallery-desc">Restored to factory suction performance</div>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-img="images/12.jpeg" data-title="Complete Chimney Service & Deep Polish"
-          data-desc="Thorough outer body degreasing, glass shining, and post-service sanitation.">
-          <img src="images/12.jpeg" alt="Complete Chimney Cleaning & Polish" loading="lazy" />
-          <span class="zoom-badge">🔍 Click to Zoom</span>
-          <div class="gallery-overlay">
-            <div class="gallery-title">Deep Cleaning & Polish Finish</div>
-            <div class="gallery-desc">Pristine look & restored suction</div>
-          </div>
-        </div>
       </div>
 
-      <!-- Featured Video Showcase Grid -->
-      <div class="video-showcase-container">
-        <div class="video-showcase-header">
-          <span class="badge badge-accent">🎬 Watch Our Live Field Service Video</span>
-          <h3 class="video-showcase-title">Real Technicians In Action</h3>
-          <p class="video-showcase-subtitle">
-            See how our technicians deep clean, repair motors, and test chimney suction live in action.
-          </p>
-        </div>
-
-        <div class="video-grid">
-          <div class="video-card">
-            <div class="video-wrapper">
-              <video controls preload="metadata" poster="images/1.jpeg" playsinline>
-                <source src="videos/1.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="video-card-body">
-              <span class="video-badge">📹 Live Work Demo #1</span>
-              <h4>Deep Chemical Degreasing & Blower Cleaning</h4>
-              <p>Watch complete teardown, heavy grease removal, and blower degreasing bath at customer site.</p>
-            </div>
-          </div>
-
-          <div class="video-card">
-            <div class="video-wrapper">
-              <video controls preload="metadata" poster="images/2.jpeg" playsinline>
-                <source src="videos/2.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="video-card-body">
-              <span class="video-badge">📹 Live Work Demo #2</span>
-              <h4>Motor Servicing & Suction Performance Test</h4>
-              <p>Live field demonstration of chimney motor tuning, reassembly, and final high CFM suction check.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Cost Calculator Section -->
-  <section class="calculator-section" id="calculator">
-    <div class="container">
-      <div class="badge badge-primary"
-        style="margin: 0 auto 12px; display: table; background: rgba(56, 189, 248, 0.2); color: #38bdf8;">Instant Quote
-      </div>
-      <h2 class="section-title">Interactive Service Cost Estimator</h2>
-      <p class="section-subtitle">Select your chimney model and required service to view estimated upfront pricing.</p>
-
-      <div class="calc-card">
-        <div class="calc-inputs">
-          <div class="calc-form-group">
-            <label for="calcType">Select Chimney Type:</label>
-            <select id="calcType" class="calc-select">
-              <option value="wall">Wall Mounted Chimney</option>
-              <option value="island">Island Ceiling Chimney</option>
-              <option value="straight">Straight Glass / Mesh Hood</option>
-              <option value="auto_clean">Auto-Clean Heat / Touch Chimney</option>
-            </select>
-          </div>
-
-          <div class="calc-form-group">
-            <label for="calcService">Select Service Required:</label>
-            <select id="calcService" class="calc-select">
-              <option value="deep_clean">Deep Chemical Cleaning</option>
-              <option value="motor_repair">Motor / Blower Repair</option>
-              <option value="duct_install">Duct Pipe Fitting</option>
-            </select>
-          </div>
-
-          <div class="calc-includes">
-            <p><strong>What's Included in this Quote:</strong></p>
-            <ul style="margin-top: 8px;">
-              <li>✓ Doorstep technician visit & diagnosis</li>
-              <li>✓ Non-toxic degreaser chemical application</li>
-              <li>✓ 90 Days post-service warranty</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="calc-result-box">
-          <span class="calc-result-title">Estimated Total Cost</span>
-          <div class="calc-amount" id="calcAmount">₹999</div>
-          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 20px;">*No hidden charges. Price includes taxes &
-            labor.</p>
-          <button class="btn btn-book" id="calcBookBtn">📅 Book at This Price</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Products Section -->
-  <section class="products" id="products">
-    <div class="container">
-      <div class="badge badge-accent" style="margin: 0 auto 12px; display: table;">Genuine Spare Parts</div>
-      <h2 class="section-title">Chimney Accessories & Replacements</h2>
-      <p class="section-subtitle">Factory-approved spare parts available with home delivery and technician installation.
-      </p>
-
-      <div class="products-grid">
-        <div class="product-card">
-          <div class="product-image">🧤</div>
-          <h3>Stainless Steel Baffle Filter</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">Heavy-duty dual baffle filter for
-            Indian cooking oil retention.</p>
-          <div class="price">₹1,200 - ₹1,800</div>
-          <button class="btn btn-phone" style="width: 100%;" onclick="selectServiceAndBook('filter')">Inquire
-            Parts</button>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image">⚙️</div>
-          <h3>High Suction Copper Motor</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">1200+ m³/hr suction copper wound
-            motor with thermal cut-off.</p>
-          <div class="price">₹3,500 - ₹5,500</div>
-          <button class="btn btn-phone" style="width: 100%;" onclick="selectServiceAndBook('motor')">Inquire
-            Parts</button>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image">🎛️</div>
-          <h3>Touch / Push Button PCB Control</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">Replacement touch sensor switch
-            board with remote support.</p>
-          <div class="price">₹800 - ₹1,800</div>
-          <button class="btn btn-phone" style="width: 100%;" onclick="selectServiceAndBook('repair')">Inquire
-            Parts</button>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image">🌀</div>
-          <h3>Aluminum Flexible Duct Pipe</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">Expandable anti-corrosive ducting
-            pipe with outdoor cowl cover.</p>
-          <div class="price">₹450 - ₹1,200</div>
-          <button class="btn btn-phone" style="width: 100%;" onclick="selectServiceAndBook('installation')">Inquire
-            Parts</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Customer Testimonials Section -->
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <div class="badge badge-primary" style="margin: 0 auto 12px; display: table;">Real Reviews</div>
-      <h2 class="section-title">What Our Customers Say</h2>
-      <p class="section-subtitle">Trusted by thousands of households across Noida, Greater Noida, Ghaziabad & NCR.</p>
-
-      <div class="testimonials-carousel">
-        <div class="testimonial-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">
-              "Very fast service! The technician arrived within 45 minutes of booking and completely opened the chimney
-              fan. Suction is back like a new chimney."
-            </p>
-          </div>
-          <p class="testimonial-author">— Ramesh K., Sector 62 Noida</p>
-        </div>
-
-        <div class="testimonial-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">
-              "Honest pricing and polite behavior. He explained why the touch panel wasn't working and replaced the
-              capacitor right in front of me."
-            </p>
-          </div>
-          <p class="testimonial-author">— Priya Sharma, Greater Noida</p>
-        </div>
-
-        <div class="testimonial-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">
-              "Booked deep cleaning service for my Faber chimney. Their deep cleaning removed all burnt grease smells. Highly
-              recommended service team!"
-            </p>
-          </div>
-          <p class="testimonial-author">— Amit Gupta, Indirapuram Ghaziabad</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Accordion Section -->
-  <section class="faq-section" id="faq">
-    <div class="container">
-      <div class="badge badge-accent" style="margin: 0 auto 12px; display: table;">Got Questions?</div>
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <p class="section-subtitle">Clear answers to help you maintain optimal chimney performance.</p>
-
-      <div class="faq-wrapper">
-        <div class="faq-item active">
-          <button class="faq-question">
-            <span>How often should a kitchen chimney be deep cleaned?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div class="faq-answer">
-            For typical Indian kitchens with heavy oil frying and spices, deep cleaning is recommended every 3 to 6
-            months. Baffle filters should be washed monthly at home.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Do your technicians carry genuine factory spare parts?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div class="faq-answer">
-            Yes, our technicians arrive equipped with OEM-certified motors, capacitors, baffle filters, carbon filters,
-            and PCB touch switches for all major brands like Faber, Elica, Glen, Hindware, and Kaff.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Is there any warranty on repair services?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div class="faq-answer">
-            All our repair services come with a 90-day warranty on workmanship and 1-year manufacturer warranty on
-            replaced motors and electrical components.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>How long does a deep cleaning session take?</span>
-            <span class="faq-icon">▼</span>
-          </button>
-          <div class="faq-answer">
-            A thorough deep cleaning takes approximately 45 to 60 minutes. The technician completely opens the blower
-            housing, cleans all oil traps, and reassembles it cleanly.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact & Booking Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2 class="section-title">Book Service or Request Callback</h2>
-      <p class="section-subtitle">Fill in the form below and our team will get in touch with you within 15 minutes.</p>
-
-      <div class="contact-wrapper">
-        <div class="contact-form">
-          <h3>Request Doorstep Service</h3>
-          <form id="contactForm">
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="name">Your Name *</label>
-                <input type="text" id="name" placeholder="e.g. Rahul Verma" required />
-              </div>
-
-              <div class="form-group">
-                <label for="phone">Phone Number *</label>
-                <input type="tel" id="phone" placeholder="e.g. 8607673545" required />
-              </div>
-
-              <div class="form-group full-width">
-                <label for="service">Required Service *</label>
-                <select id="service" required>
-                  <option value="">Select a Service Option</option>
-                  <option value="cleaning">🧹 Deep Chimney Cleaning (₹799+)</option>
-                  <option value="repair">🔧 Repair & Fault Diagnosis (₹499+)</option>
-                  <option value="motor">⚙️ Motor Repair / Replacement (₹1,299+)</option>
-                  <option value="installation">🏗️ Duct Fitting & Installation (₹899+)</option>
-                  <option value="filter">🧤 Filter Replacement (₹599+)</option>
-                  <option value="relocation">📦 Uninstallation & Relocation (₹699+)</option>
-                </select>
-              </div>
-
-              <div class="form-group full-width">
-                <label for="message">Address / Service Details</label>
-                <textarea id="message" rows="3" placeholder="Enter your full address & locality details..."></textarea>
-              </div>
-            </div>
-
-            <div class="btn-form-group">
-              <button type="submit" class="btn btn-primary">📅 Submit Booking Request</button>
-              <button type="button" class="btn btn-whatsapp" id="btnWhatsApp">💬 Send via WhatsApp</button>
-            </div>
-          </form>
-        </div>
-
-        <div class="contact-info">
-          <h3>Contact Details</h3>
-
-          <div class="info-item">
-            <div class="info-icon">📞</div>
-            <div class="info-text">
-              <strong>Direct Phone Lines:</strong>
-              <a href="tel:+918607673545">+91 8607673545</a>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="info-icon">💬</div>
-            <div class="info-text">
-              <strong>WhatsApp Support:</strong>
-              <a href="https://wa.me/918607673545" target="_blank">+91 8607673545</a>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="info-icon">✉️</div>
-            <div class="info-text">
-              <strong>Email Support:</strong>
-              <a href="mailto:arunkumar8607673545@gmail.com">arunkumar8607673545@gmail.com</a>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="info-icon">📍</div>
-            <div class="info-text">
-              <strong>Service Coverage Area:</strong>
-              <p>Noida, Greater Noida, Ghaziabad, Indirapuram, Vaishali & NCR Region.</p>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="info-icon">🕐</div>
-            <div class="info-text">
-              <strong>Working Hours:</strong>
-              <p>Monday – Sunday: 8:00 AM – 9:00 PM</p>
-            </div>
-          </div>
-        </div>
+      <div style="text-align: center; margin-top: 36px;">
+        <a href="gallery.html" class="btn btn-phone">Explore 12+ Field Photos &amp; Live Videos &rarr;</a>
       </div>
     </div>
   </section>
@@ -697,46 +345,60 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-info">
-        <p>&copy; 2026 Clean My Chimney. All rights reserved. Professional Doorstep Chimney Cleaning & Repair Service.</p>
+        <p>&copy; 2026 Clean My Chimney. All rights reserved. Professional Doorstep Chimney Cleaning &amp; Repair
+          Service.</p>
         <p class="footer-email">
-          ✉️ Email: <a href="mailto:arunkumar8607673545@gmail.com" class="footer-email-link">arunkumar8607673545@gmail.com</a>
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          Email: <a href="mailto:arunkumar8607673545@gmail.com"
+            class="footer-email-link">arunkumar8607673545@gmail.com</a>
         </p>
         <p class="footer-credit">
-          Created & Serviced by <a href="https://edoply.in" target="_blank" rel="noopener noreferrer" class="credit-link">edoply.in</a>
+          Created &amp; Serviced by <a href="https://edoply.in" target="_blank" rel="noopener noreferrer"
+            class="credit-link">edoply.in</a>
         </p>
       </div>
       <div class="footer-links">
-        <a href="#home" style="margin-right: 16px;">Home</a>
-        <a href="#services" style="margin-right: 16px;">Services</a>
-        <a href="#contact">Book Now</a>
+        <a href="index.html" style="margin-right: 16px;">Home</a>
+        <a href="services.html" style="margin-right: 16px;">Services</a>
+        <a href="pricing.html" style="margin-right: 16px;">Pricing</a>
+        <a href="products.html" style="margin-right: 16px;">Products</a>
+        <a href="gallery.html" style="margin-right: 16px;">Gallery</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </footer>
 
   <!-- Mobile Sticky Bottom Action Bar -->
   <div class="mobile-sticky-bar">
-    <button class="btn btn-phone" onclick="window.location.href='tel:+918607673545'">📞 Call Now</button>
+    <button class="btn btn-phone" onclick="window.location.href='tel:+918607673545'">
+      <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+      </svg>
+      Call Now
+    </button>
     <button class="btn btn-whatsapp"
-      onclick="window.open('https://wa.me/918607673545?text=Hi%2C%20I%20want%20to%20book%20a%20Chimney%20Service', '_blank')">💬
-      WhatsApp</button>
-  </div>
-
-  <!-- Image Lightbox Modal -->
-  <div class="lightbox-modal" id="lightboxModal">
-    <div class="lightbox-content">
-      <button class="lightbox-close" id="lightboxClose">✕</button>
-      <img src="" alt="Service Lightbox Preview" class="lightbox-img" id="lightboxImg" />
-      <div class="lightbox-caption">
-        <h4 id="lightboxTitle">Service Preview</h4>
-        <p id="lightboxDesc">Detailed field snapshot of chimney servicing.</p>
-      </div>
-    </div>
+      onclick="window.open('https://wa.me/918607673545?text=Hi%2C%20I%20want%20to%20book%20a%20Chimney%20Service', '_blank')">
+      <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.99c-.002 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413" />
+      </svg>
+      WhatsApp
+    </button>
   </div>
 
   <!-- Toast Notification Container -->
   <div class="toast-notification" id="toastNotification">
-    <span style="font-size: 1.25rem;">✅</span>
-    <span id="toastMsg">Your booking request has been submitted successfully!</span>
+    <svg class="icon-svg" style="color: #10b981; font-size: 1.25rem;" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
+    <span id="toastMsg">Your request has been received!</span>
   </div>
 
   <!-- Script -->

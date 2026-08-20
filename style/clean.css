@@ -1565,3 +1565,181 @@ textarea {
     padding-bottom: 65px;
   }
 }
+
+/* ==========================================================================
+   SVG Iconography & Multi-Page Layout Extensions
+   ========================================================================== */
+.icon-svg {
+  width: 1.25em;
+  height: 1.25em;
+  display: inline-block;
+  vertical-align: -0.2em;
+  flex-shrink: 0;
+}
+
+.icon-svg-lg {
+  width: 2.25rem;
+  height: 2.25rem;
+  vertical-align: middle;
+}
+
+.icon-svg-md {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+}
+
+.icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--primary-light);
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* Inner Page Header Hero */
+.page-header {
+  background: linear-gradient(135deg, #0b132b 0%, #1c2541 100%);
+  color: #ffffff;
+  padding: 120px 0 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.page-header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(2, 132, 199, 0.15), transparent 70%);
+  pointer-events: none;
+}
+
+.page-header h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.page-header p {
+  font-size: 1.15rem;
+  color: #94a3b8;
+  max-width: 680px;
+  margin: 0 auto 24px;
+}
+
+.breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+}
+
+.breadcrumb a {
+  color: #cbd5e1;
+  transition: var(--transition-fast);
+}
+
+.breadcrumb a:hover {
+  color: #ffffff;
+}
+
+/* Process Timeline / Step Cards */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.process-card {
+  background: var(--bg-card);
+  padding: 30px 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.process-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-light);
+}
+
+.process-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(2, 132, 199, 0.15);
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
+.process-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: var(--dark-bg);
+}
+
+/* Pricing Comparison Table */
+.pricing-table-wrapper {
+  overflow-x: auto;
+  margin-top: 40px;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.pricing-table th {
+  background: var(--dark-bg);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.pricing-table tbody tr:hover {
+  background-color: var(--primary-light);
+}
+
+/* Map Placeholder / Container */
+.map-container {
+  width: 100%;
+  height: 380px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin-top: 24px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
