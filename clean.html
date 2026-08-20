@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clean My Chimney - Professional Chimney Cleaning, Repair & Service</title>
+  <meta name="description"
+    content="Fast, door-step kitchen chimney cleaning, motor repair, and duct installation service. Certified technicians, genuine parts, and same-day service." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style/clean.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-brand" onclick="window.location.href='#home'">
+        <span class="logo-icon">🏠</span>
+        <span>CLEAN MY CHIMNEY</span>
+      </div>
+
+      <div class="nav-menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Real Work</a>
+        <a href="#calculator">Price Estimator</a>
+        <a href="#products">Products</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="btn btn-phone" onclick="window.location.href='tel:+918607673545'">
+          📞 +91 8607673545
+        </button>
+        <button class="btn btn-book"
+          onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+          📅 Book Online
+        </button>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+        ☰
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="nav-brand">
+        <span class="logo-icon">🏠</span>
+        <span>CLEAN MY CHIMNEY</span>
+      </div>
+      <button class="mobile-drawer-close" id="drawerClose">✕</button>
+    </div>
+    <div class="mobile-drawer-menu">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Real Work Showcase</a>
+      <a href="#calculator">Price Estimator</a>
+      <a href="#products">Products & Accessories</a>
+      <a href="#testimonials">Customer Reviews</a>
+      <a href="#faq">Frequently Asked Questions</a>
+      <a href="#contact">Contact & Booking</a>
+    </div>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 10px;">
+      <button class="btn btn-phone" onclick="window.location.href='tel:+918607673545'">📞 Call Support</button>
+      <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/918607673545', '_blank')">💬 WhatsApp
+        Us</button>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge badge-accent">⚡ Same-Day Service Guarantee</span>
+        </div>
+        <h1>Fast, Reliable Kitchen <span>Chimney Service</span> At Your Doorstep</h1>
+        <p>
+          Deep cleaning, motor repair, and duct installation across your city.
+          Trained certified technicians with genuine factory spare parts and 90 days service warranty.
+        </p>
+
+        <div class="hero-ctas">
+          <button class="btn btn-book"
+            onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+            Request Service Now
+          </button>
+          <button class="btn btn-whatsapp"
+            onclick="window.open('https://wa.me/918607673545?text=Hi%2C%20I%20want%20to%20book%20a%20Chimney%20Service', '_blank')">
+            WhatsApp Quick Booking
+          </button>
+        </div>
+
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-number">10,000+</span>
+            <span class="stat-label">Chimneys Serviced</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4.9 ★</span>
+            <span class="stat-label">Customer Rating</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">30 Mins</span>
+            <span class="stat-label">Response Time</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">90 Days</span>
+            <span class="stat-label">Service Warranty</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands Section -->
+  <div class="brands-section">
+    <div class="container">
+      <p class="brands-title">Authorized Repairs & Servicing For All Top Brands</p>
+      <div class="brands-flex">
+        <span class="brand-pill">FABER</span>
+        <span class="brand-pill">ELICA</span>
+        <span class="brand-pill">GLEN</span>
+        <span class="brand-pill">HINDWARE</span>
+        <span class="brand-pill">BOSCH</span>
+        <span class="brand-pill">SIEMENS</span>
+        <span class="brand-pill">KAFF</span>
+        <span class="brand-pill">PRESTIGE</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="badge badge-primary" style="margin: 0 auto 12px; display: table;">Our Expertise</div>
+      <h2 class="section-title">Comprehensive Chimney Services</h2>
+      <p class="section-subtitle">
+        We handle everything from sticky grease removal to complete motor rewinding & new duct installations.
+      </p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🔧</div>
+          <h3>Chimney Repair & Diagnostics</h3>
+          <p>Full repair of noise issues, power failure, touch sensor errors, and circuit board faults with genuine
+            spares.</p>
+          <div class="service-card-footer">
+            <span class="service-price">Starts at ₹499</span>
+            <button class="btn-link" onclick="selectServiceAndBook('repair')">Book Now →</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧹</div>
+          <h3>Deep Cleaning Service</h3>
+          <p>Thorough degreasing of blowers, mesh filters, oil collectors, and inner housing using non-toxic food-safe
+            chemicals.</p>
+          <div class="service-card-footer">
+            <span class="service-price">Starts at ₹799</span>
+            <button class="btn-link" onclick="selectServiceAndBook('cleaning')">Book Now →</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Motor Replacement & Repair</h3>
+          <p>High-torque copper motor replacement with silent bearing technology and thermal overload protection.</p>
+          <div class="service-card-footer">
+            <span class="service-price">Starts at ₹1,299</span>
+            <button class="btn-link" onclick="selectServiceAndBook('motor')">Book Now →</button>
+          </div>
+        </div>
+
+
+        <div class="service-card">
+          <div class="service-icon">🧤</div>
+          <h3>Filter Replacement</h3>
+          <p>Replacement of heavy baffle filters, stainless mesh, and activated carbon charcoal filters for odor
+            elimination.</p>
+          <div class="service-card-footer">
+            <span class="service-price">Starts at ₹599</span>
+            <button class="btn-link" onclick="selectServiceAndBook('filter')">Book Now →</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3>Installation & Duct Fitting</h3>
+          <p>Precision wall-mounted & island chimney installation with anti-rust aluminum flexible duct pipe fitting.
+          </p>
+          <div class="service-card-footer">
+            <span class="service-price">Starts at ₹899</span>
+            <button class="btn-link" onclick="selectServiceAndBook('installation')">Book Now →</button>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📦</div>
+          <h3>Uninstallation & Relocation</h3>
+          <p>Safe chimney dismantling, wall bracket removal, and re-installation at your new home location.</p>
+          <div class="service-card-footer">
+            <span class="service-price">Starts at ₹699</span>
+            <button class="btn-link" onclick="selectServiceAndBook('relocation')">Book Now →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Work Showcase Gallery -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="badge badge-accent" style="margin: 0 auto 12px; display: table;">Proof of Quality</div>
+      <h2 class="section-title">Our Real Field Work in Action</h2>
+      <p class="section-subtitle">
+        See how our technicians transform dirty, clogged chimneys into pristine, high-suction units.
+      </p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-img="images/1.jpeg" data-title="Deep Chimney Disassembly & Grease Scraping"
+          data-desc="Complete teardown of oil-choked hood to restore internal airflow.">
+          <img src="images/1.jpeg" alt="Chimney Service Disassembly" loading="lazy" />
+          <span class="zoom-badge">🔍 Click to Zoom</span>
+          <div class="gallery-overlay">
+            <div class="gallery-title">Grease Scraping & Disassembly</div>
+            <div class="gallery-desc">Full internal overhaul during servicing</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="images/2.jpeg" data-title="Blower Fan & Housing Degreasing"
+          data-desc="Removal of heavy carbon sludge from suction fan blades to restore full CFM power.">
+          <img src="images/2.jpeg" alt="Blower Fan Cleaning" loading="lazy" />
+          <span class="zoom-badge">🔍 Click to Zoom</span>
+          <div class="gallery-overlay">
+            <div class="gallery-title">Blower Fan & Motor Housing</div>
+            <div class="gallery-desc">Deep cleaning of heavy oil build-up</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="images/3.jpeg" data-title="Clean Installed Siemens Chimney"
+          data-desc="Finished wall-mounted stainless steel chimney installation with pristine wall tiling match.">
+          <img src="images/3.jpeg" alt="Installed Siemens Chimney" loading="lazy" />
+          <span class="zoom-badge">🔍 Click to Zoom</span>
+          <div class="gallery-overlay">
+            <div class="gallery-title">Finished Kitchen Installation</div>
+            <div class="gallery-desc">Flawless setup with concealed ducting</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="images/4.jpeg" data-title="Motor Shaft & Bearing Servicing"
+          data-desc="Precision inspection and lubrication of chimney motor rotor to eliminate humming noise.">
+          <img src="images/4.jpeg" alt="Motor Shaft Servicing" loading="lazy" />
+          <span class="zoom-badge">🔍 Click to Zoom</span>
+          <div class="gallery-overlay">
+            <div class="gallery-title">Motor & Rotor Tuning</div>
+            <div class="gallery-desc">Replacing faulty bearings & noisy motors</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="images/5.jpeg" data-title="Chemical Pressure Cleaning & Wash"
+          data-desc="Deep degreasing bath and high-pressure chemical wash to dissolve stubborn grease.">
+          <img src="images/5.jpeg" alt="Chemical Pressure Cleaning" loading="lazy" />
+          <span class="zoom-badge">🔍 Click to Zoom</span>
+          <div class="gallery-overlay">
+            <div class="gallery-title">Chemical Washing & Degreasing</div>
+            <div class="gallery-desc">Removing heavy oil and carbon grime</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="images/6.jpeg" data-title="Exhaust Duct Pipe Fitting & Seal"
+          data-desc="Fitting durable, anti-rust flexible aluminum ducting pipe for smooth smoke extraction.">
+          <img src="images/6.jpeg" alt="Duct Pipe Fitting" loading="lazy" />
+          <span class="zoom-badge">🔍 Click to Zoom</span>
+          <div class="gallery-overlay">
+            <div class="gallery-title">Aluminum Duct Pipe Installation</div>
+            <div class="gallery-desc">Leak-proof pipe fitting & outdoor cowl</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="images/7.jpeg" data-title="Baffle Filter & Oil Collector Cleaning"
+          data-desc="Deep scrubbing and thermal treatment of stainless steel baffle filters.">
+          <img src="images/7.jpeg" alt="Baffle Filter Cleaning" loading="lazy" />
+          <span class="zoom-badge">🔍 Click to Zoom</span>
+          <div class="gallery-overlay">
+            <div class="gallery-title">Filter & Oil Tray Restoration</div>
+            <div class="gallery-desc">100% degreased baffle filter grid</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="images/8.jpeg" data-title="Motor Capacitor & Wiring Repair"
+          data-desc="Testing electrical circuit board, switch contacts, and replacing failed capacitor units.">
+          <img src="images/8.jpeg" alt="Motor Electrical Wiring Repair" loading="lazy" />
+          <span class="zoom-badge">🔍 Click to Zoom</span>
+          <div class="gallery-overlay">
+            <div class="gallery-title">Circuit & Electrical Repair</div>
+            <div class="gallery-desc">Replacing PCB, capacitor & power cord</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="images/9.jpeg" data-title="Comprehensive Doorstep Servicing"
+          data-desc="Complete breakdown, cleaning, and restoration performed directly at customer doorstep.">
+          <img src="images/9.jpeg" alt="Doorstep Service Work" loading="lazy" />
+          <span class="zoom-badge">🔍 Click to Zoom</span>
+          <div class="gallery-overlay">
+            <div class="gallery-title">On-Site Doorstep Service</div>
+            <div class="gallery-desc">Professional field work in progress</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="images/10.jpeg" data-title="Touch Switch Panel & Auto-Clean Calibration"
+          data-desc="Recalibrating motion sensors and touch keypads for smooth speed control.">
+          <img src="images/10.jpeg" alt="Touch Control Switch Servicing" loading="lazy" />
+          <span class="zoom-badge">🔍 Click to Zoom</span>
+          <div class="gallery-overlay">
+            <div class="gallery-title">Touch Switch & Sensor Setup</div>
+            <div class="gallery-desc">Fixing key responsiveness & motion sensor</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="images/11.jpeg" data-title="Final Reassembly & Suction Testing"
+          data-desc="Quality check ensuring maximum suction CFM output, silent operation, and zero smoke leak.">
+          <img src="images/11.jpeg" alt="Final Reassembly & Testing" loading="lazy" />
+          <span class="zoom-badge">🔍 Click to Zoom</span>
+          <div class="gallery-overlay">
+            <div class="gallery-title">Final Quality & Airflow Check</div>
+            <div class="gallery-desc">Restored to factory suction performance</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-img="images/12.jpeg" data-title="Complete Chimney Service & Deep Polish"
+          data-desc="Thorough outer body degreasing, glass shining, and post-service sanitation.">
+          <img src="images/12.jpeg" alt="Complete Chimney Cleaning & Polish" loading="lazy" />
+          <span class="zoom-badge">🔍 Click to Zoom</span>
+          <div class="gallery-overlay">
+            <div class="gallery-title">Deep Cleaning & Polish Finish</div>
+            <div class="gallery-desc">Pristine look & restored suction</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Video Showcase Grid -->
+      <div class="video-showcase-container">
+        <div class="video-showcase-header">
+          <span class="badge badge-accent">🎬 Watch Our Live Field Service Video</span>
+          <h3 class="video-showcase-title">Real Technicians In Action</h3>
+          <p class="video-showcase-subtitle">
+            See how our technicians deep clean, repair motors, and test chimney suction live in action.
+          </p>
+        </div>
+
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-wrapper">
+              <video controls preload="metadata" poster="images/1.jpeg" playsinline>
+                <source src="videos/1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-card-body">
+              <span class="video-badge">📹 Live Work Demo #1</span>
+              <h4>Deep Chemical Degreasing & Blower Cleaning</h4>
+              <p>Watch complete teardown, heavy grease removal, and blower degreasing bath at customer site.</p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-wrapper">
+              <video controls preload="metadata" poster="images/2.jpeg" playsinline>
+                <source src="videos/2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-card-body">
+              <span class="video-badge">📹 Live Work Demo #2</span>
+              <h4>Motor Servicing & Suction Performance Test</h4>
+              <p>Live field demonstration of chimney motor tuning, reassembly, and final high CFM suction check.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cost Calculator Section -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      <div class="badge badge-primary"
+        style="margin: 0 auto 12px; display: table; background: rgba(56, 189, 248, 0.2); color: #38bdf8;">Instant Quote
+      </div>
+      <h2 class="section-title">Interactive Service Cost Estimator</h2>
+      <p class="section-subtitle">Select your chimney model and required service to view estimated upfront pricing.</p>
+
+      <div class="calc-card">
+        <div class="calc-inputs">
+          <div class="calc-form-group">
+            <label for="calcType">Select Chimney Type:</label>
+            <select id="calcType" class="calc-select">
+              <option value="wall">Wall Mounted Chimney</option>
+              <option value="island">Island Ceiling Chimney</option>
+              <option value="straight">Straight Glass / Mesh Hood</option>
+              <option value="auto_clean">Auto-Clean Heat / Touch Chimney</option>
+            </select>
+          </div>
+
+          <div class="calc-form-group">
+            <label for="calcService">Select Service Required:</label>
+            <select id="calcService" class="calc-select">
+              <option value="deep_clean">Deep Chemical Cleaning</option>
+              <option value="motor_repair">Motor / Blower Repair</option>
+              <option value="duct_install">Duct Pipe Fitting</option>
+            </select>
+          </div>
+
+          <div class="calc-includes">
+            <p><strong>What's Included in this Quote:</strong></p>
+            <ul style="margin-top: 8px;">
+              <li>✓ Doorstep technician visit & diagnosis</li>
+              <li>✓ Non-toxic degreaser chemical application</li>
+              <li>✓ 90 Days post-service warranty</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="calc-result-box">
+          <span class="calc-result-title">Estimated Total Cost</span>
+          <div class="calc-amount" id="calcAmount">₹999</div>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 20px;">*No hidden charges. Price includes taxes &
+            labor.</p>
+          <button class="btn btn-book" id="calcBookBtn">📅 Book at This Price</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="badge badge-accent" style="margin: 0 auto 12px; display: table;">Genuine Spare Parts</div>
+      <h2 class="section-title">Chimney Accessories & Replacements</h2>
+      <p class="section-subtitle">Factory-approved spare parts available with home delivery and technician installation.
+      </p>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">🧤</div>
+          <h3>Stainless Steel Baffle Filter</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">Heavy-duty dual baffle filter for
+            Indian cooking oil retention.</p>
+          <div class="price">₹1,200 - ₹1,800</div>
+          <button class="btn btn-phone" style="width: 100%;" onclick="selectServiceAndBook('filter')">Inquire
+            Parts</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">⚙️</div>
+          <h3>High Suction Copper Motor</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">1200+ m³/hr suction copper wound
+            motor with thermal cut-off.</p>
+          <div class="price">₹3,500 - ₹5,500</div>
+          <button class="btn btn-phone" style="width: 100%;" onclick="selectServiceAndBook('motor')">Inquire
+            Parts</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">🎛️</div>
+          <h3>Touch / Push Button PCB Control</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">Replacement touch sensor switch
+            board with remote support.</p>
+          <div class="price">₹800 - ₹1,800</div>
+          <button class="btn btn-phone" style="width: 100%;" onclick="selectServiceAndBook('repair')">Inquire
+            Parts</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">🌀</div>
+          <h3>Aluminum Flexible Duct Pipe</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">Expandable anti-corrosive ducting
+            pipe with outdoor cowl cover.</p>
+          <div class="price">₹450 - ₹1,200</div>
+          <button class="btn btn-phone" style="width: 100%;" onclick="selectServiceAndBook('installation')">Inquire
+            Parts</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="badge badge-primary" style="margin: 0 auto 12px; display: table;">Real Reviews</div>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-subtitle">Trusted by thousands of households across Noida, Greater Noida, Ghaziabad & NCR.</p>
+
+      <div class="testimonials-carousel">
+        <div class="testimonial-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Very fast service! The technician arrived within 45 minutes of booking and completely opened the chimney
+              fan. Suction is back like a new chimney."
+            </p>
+          </div>
+          <p class="testimonial-author">— Ramesh K., Sector 62 Noida</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Honest pricing and polite behavior. He explained why the touch panel wasn't working and replaced the
+              capacitor right in front of me."
+            </p>
+          </div>
+          <p class="testimonial-author">— Priya Sharma, Greater Noida</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Booked deep cleaning service for my Faber chimney. Their deep cleaning removed all burnt grease smells. Highly
+              recommended service team!"
+            </p>
+          </div>
+          <p class="testimonial-author">— Amit Gupta, Indirapuram Ghaziabad</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="badge badge-accent" style="margin: 0 auto 12px; display: table;">Got Questions?</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Clear answers to help you maintain optimal chimney performance.</p>
+
+      <div class="faq-wrapper">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>How often should a kitchen chimney be deep cleaned?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            For typical Indian kitchens with heavy oil frying and spices, deep cleaning is recommended every 3 to 6
+            months. Baffle filters should be washed monthly at home.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do your technicians carry genuine factory spare parts?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            Yes, our technicians arrive equipped with OEM-certified motors, capacitors, baffle filters, carbon filters,
+            and PCB touch switches for all major brands like Faber, Elica, Glen, Hindware, and Kaff.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is there any warranty on repair services?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            All our repair services come with a 90-day warranty on workmanship and 1-year manufacturer warranty on
+            replaced motors and electrical components.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does a deep cleaning session take?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            A thorough deep cleaning takes approximately 45 to 60 minutes. The technician completely opens the blower
+            housing, cleans all oil traps, and reassembles it cleanly.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Booking Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Book Service or Request Callback</h2>
+      <p class="section-subtitle">Fill in the form below and our team will get in touch with you within 15 minutes.</p>
+
+      <div class="contact-wrapper">
+        <div class="contact-form">
+          <h3>Request Doorstep Service</h3>
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" placeholder="e.g. Rahul Verma" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" placeholder="e.g. 8607673545" required />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="service">Required Service *</label>
+                <select id="service" required>
+                  <option value="">Select a Service Option</option>
+                  <option value="cleaning">🧹 Deep Chimney Cleaning (₹799+)</option>
+                  <option value="repair">🔧 Repair & Fault Diagnosis (₹499+)</option>
+                  <option value="motor">⚙️ Motor Repair / Replacement (₹1,299+)</option>
+                  <option value="installation">🏗️ Duct Fitting & Installation (₹899+)</option>
+                  <option value="filter">🧤 Filter Replacement (₹599+)</option>
+                  <option value="relocation">📦 Uninstallation & Relocation (₹699+)</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="message">Address / Service Details</label>
+                <textarea id="message" rows="3" placeholder="Enter your full address & locality details..."></textarea>
+              </div>
+            </div>
+
+            <div class="btn-form-group">
+              <button type="submit" class="btn btn-primary">📅 Submit Booking Request</button>
+              <button type="button" class="btn btn-whatsapp" id="btnWhatsApp">💬 Send via WhatsApp</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div class="info-text">
+              <strong>Direct Phone Lines:</strong>
+              <a href="tel:+918607673545">+91 8607673545</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">💬</div>
+            <div class="info-text">
+              <strong>WhatsApp Support:</strong>
+              <a href="https://wa.me/918607673545" target="_blank">+91 8607673545</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div class="info-text">
+              <strong>Email Support:</strong>
+              <a href="mailto:arunkumar8607673545@gmail.com">arunkumar8607673545@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-text">
+              <strong>Service Coverage Area:</strong>
+              <p>Noida, Greater Noida, Ghaziabad, Indirapuram, Vaishali & NCR Region.</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">🕐</div>
+            <div class="info-text">
+              <strong>Working Hours:</strong>
+              <p>Monday – Sunday: 8:00 AM – 9:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <p>&copy; 2026 Clean My Chimney. All rights reserved. Professional Doorstep Chimney Cleaning & Repair Service.</p>
+        <p class="footer-email">
+          ✉️ Email: <a href="mailto:arunkumar8607673545@gmail.com" class="footer-email-link">arunkumar8607673545@gmail.com</a>
+        </p>
+        <p class="footer-credit">
+          Created & Serviced by <a href="https://edoply.in" target="_blank" rel="noopener noreferrer" class="credit-link">edoply.in</a>
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="#home" style="margin-right: 16px;">Home</a>
+        <a href="#services" style="margin-right: 16px;">Services</a>
+        <a href="#contact">Book Now</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <div class="mobile-sticky-bar">
+    <button class="btn btn-phone" onclick="window.location.href='tel:+918607673545'">📞 Call Now</button>
+    <button class="btn btn-whatsapp"
+      onclick="window.open('https://wa.me/918607673545?text=Hi%2C%20I%20want%20to%20book%20a%20Chimney%20Service', '_blank')">💬
+      WhatsApp</button>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">✕</button>
+      <img src="" alt="Service Lightbox Preview" class="lightbox-img" id="lightboxImg" />
+      <div class="lightbox-caption">
+        <h4 id="lightboxTitle">Service Preview</h4>
+        <p id="lightboxDesc">Detailed field snapshot of chimney servicing.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toastNotification">
+    <span style="font-size: 1.25rem;">✅</span>
+    <span id="toastMsg">Your booking request has been submitted successfully!</span>
+  </div>
+
+  <!-- Script -->
+  <script src="style/clean.js"></script>
+</body>
+
+</html>
